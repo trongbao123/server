@@ -58,11 +58,11 @@ class MatrixCellController extends Controller
         try {
             $validatedData = $request->validate([
                 'matrix_id' => 'required',
-                "row_index" => "required",
-                'column_index' => 'required|integer',
+                "row_number" => "required",
+                'column_number' => 'required|integer',
                 "label" => 'required',
-                "attribute1" => 'required',
-                "attribute2" => "required",
+                "attribute" => 'required',
+                
             ]);
 
             $matrixCell = MatrixCell::create($validatedData);

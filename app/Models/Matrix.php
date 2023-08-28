@@ -10,6 +10,6 @@ class Matrix extends Model
     use HasFactory;
     public $incrementing = true;
     public $timestamps = false;
-    protected $table = 'matrice';
+    protected $table = 'Matrices';
     protected $fillable = ["id", "name", "row", "columns"];
 }
